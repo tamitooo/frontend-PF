@@ -12,7 +12,7 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-primary">
+    <div className="flex justify-center items-center h-screen bg-black">
       <div className="flex w-full justify-center">
         <div className="w-[650px] flex items-center justify-center">
           <div className="w-full h-[650px] p-10 bg-primary drop-shadow-[0_40px_40px_rgba(0,0,0,0.60)] shadow-black/90">

@@ -6,8 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0E3459',
-        
+        primary: '#000000',
+        secondary: '#FFFFFF',
+        amarillo1: '#FFD931',
+        amarillo2: '#FCF7D5',
+        amarillo3: '#FFF0AD',
+        amarillo4: '#FDF7DD',
+        gris:'#F2F2F2',
       },
       fontFamily: {
         silkscreen: ['Silkscreen', 'sans-serif'],
