@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home: React.FC = () => {
+const Myorders: React.FC = () => {
   return (
     <div className="flex flex-col  justify-items-center h-screen bg-black">
 
@@ -15,5 +15,5 @@ const Home: React.FC = () => {
 };
 
 
-export default Home;
+export default Myorders;
 
