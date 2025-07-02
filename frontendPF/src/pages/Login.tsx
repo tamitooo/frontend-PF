@@ -22,7 +22,7 @@ const Login: React.FC = () => {
 
               <div className="mt-4">
                 <div className="mb-3">
-                  <label className="ml-5 font-judson block text-[30px] font-medium text-white mb-1">
+                  <label className="ml-5 font-judson block text-[26px] font-medium text-white mb-1">
                     Email
                   </label>
                   <div className="flex items-center justify-center">
@@ -42,7 +42,7 @@ const Login: React.FC = () => {
                 </div>
 
                 <div className="mb-3">
-                  <label className="ml-5 font-judson block text-[30px] font-medium text-white mb-1">
+                  <label className="ml-5 font-judson block text-[26px] font-medium text-white mb-1">
                     Password
                   </label>
                   <div className="flex items-center justify-center">
@@ -61,7 +61,7 @@ const Login: React.FC = () => {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <label className="ml-5 font-judson block text-[30px] font-medium text-white mb-1">
+                  <label className="ml-5 font-judson block text-[26px] font-medium text-white mb-1">
                     Tenant ID
                   </label>
                   <div className="flex items-center justify-center">
@@ -80,7 +80,7 @@ const Login: React.FC = () => {
                 <div className="flex justify-center">
                   <button
                     type="submit"
-                    className="pb-8 font-koulen text-[40px] bg-transparent border-none outline-none text-amarillo3 hover:underline transition duration-200"
+                    className="pb-8 font-koulen text-[30px] bg-transparent border-none outline-none text-amarillo3 hover:underline transition duration-200"
                   >
                     LOGIN
                   </button>
