@@ -17,6 +17,7 @@ import Cart     from './pages/Mycart';
 import Orders   from './pages/Myorders';
 import Product  from './pages/Product';
 import Search   from './pages/Search';
+import CreateProduct from './pages/CreateProduct';
 
 const AppLayout: React.FC = () => {
   const { pathname } = useLocation();
@@ -39,6 +40,8 @@ const AppLayout: React.FC = () => {
           <Route path="/search"  element={<Search />} />
           <Route path="/login"   element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/crear-producto" element={<CreateProduct />} />
+          
         </Routes>
       </div>
     </div>
