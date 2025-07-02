@@ -29,9 +29,9 @@ const Register: React.FC = () => {
                 Your Smart <br /> Tech <br />
                 Journey <br /> Starts Here. 
               </h1>
-
+              <div className="w-px h-80 mx-4 bg-amarillo1"></div>
               <section className="text-left">
-                <h1 className="font-koulen font-bold text-center text-[48px] text-white">
+                <h1 className="font-koulen font-bold text-center text-[48px] text-[#FCF7D5]">
                   Create An Account
                 </h1>
 
