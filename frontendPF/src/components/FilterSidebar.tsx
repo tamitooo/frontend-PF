@@ -71,29 +71,29 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
       </div>
 
       {/* Price Filter */}
-      <div className="w-60 h-px bg-amarillo1 mb-2"></div>
+      <div className="w-60 h-px bg-amarillo1 mb-3"></div>
       <div>
         <h3 className="text-[24px] font-jaldi font-semibold mb-3 text-black">Price</h3>
         <div className="mb-4">
           <div className="flex items-center mb-4">
-            <span className="text-[19px] font-jaldi text-black">S/.</span>
+            <span className="text-[17px] font-jaldi text-black">S/.</span>
             <input
               type="number"
               name="min"
               value={priceRange.min}
               onChange={handlePriceChange}
-              className="w-20 text-[17px] px-2 py-1  "
+              className="w-15 text-[15px] px-2 py-1  "
               min="100"
               max={priceRange.max - 100}
             />
-            <span className="text-[19px] font-jaldi text-black mx-2">-</span>
-            <span className="text-[19px] ml-6 font-jaldi text-black">S/.</span>
+            <span className="text-[17px] font-jaldi text-black mx-2">-</span>
+            <span className="text-[17px] ml-6 font-jaldi text-black">S/.</span>
             <input
               type="number"
               name="max"
               value={priceRange.max}
               onChange={handlePriceChange}
-              className="w-20 text-[17px] px-2 py-1 "
+              className="w-15 text-[15px] px-2 py-1 "
               min={priceRange.min + 100}
               max="4000"
             />

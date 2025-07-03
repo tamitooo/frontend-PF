@@ -28,7 +28,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '2',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -38,7 +38,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '3',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -48,7 +48,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '4',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -58,7 +58,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '5',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -68,7 +68,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '6',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -78,7 +78,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '7',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -88,7 +88,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '8',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -98,7 +98,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '9',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -108,7 +108,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '10',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -118,7 +118,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '11',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -128,7 +128,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '12',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
@@ -138,7 +138,7 @@ const mockProducts: Product[] = [
     specs: ['Intel i5', 'RTX 3050', '16GB RAM']
   },
   {
-    id: '1',
+    id: '13',
     name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
     price: 3700,
     originalPrice: 4000,
