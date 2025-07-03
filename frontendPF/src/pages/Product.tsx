@@ -71,6 +71,48 @@ const sampleProducts: ProductDetails[] = [
     description: 'The ROG Zephyrus G16 delivers exceptional gaming performance in an ultra-portable design.',
     inStock: true,
     maxQuantity: 5
+  },
+  {
+    id: '2',
+    name: 'ROG xd ZEPHYRUS G16 (2024) GU605',
+    price: 3700,
+    originalPrice: 4000,
+    discount: 20,
+    images: [
+      foto1,
+      foto2,
+      foto3,
+      foto4,
+    ],
+    category: 'Gaming Laptops',
+    colors: [
+      { name: 'Eclipse Gray', value: '#2D2D2D', available: true },
+      { name: 'Platinum White', value: '#F5F5F5', available: true }
+    ],
+    specifications: [
+      'Ultra-slim and lightweight design with a CNC-machined aluminum body (only 1.95 kg)',
+      '16-inch OLED WQXGA display (2560×1600 resolution) with a 240Hz refresh rate',
+      'Powered by the Intel Core Ultra 9 processor with an integrated NPU for AI acceleration',
+      'Equipped with NVIDIA GeForce RTX 40 series GPUs (4060, 4070, 4080, or 4090)',
+      'RGB backlit keyboard with full layout, including the Ñ key',
+      'Immersive surround sound with a quad-speaker system and Dolby Atmos',
+      'Advanced connectivity including Wi-Fi 6E, Bluetooth 5.3, and Thunderbolt 4',
+      'Fast charging via USB-C, with a 240W power adapter included',
+      'Available in two colors: Eclipse Gray and Platinum White'
+    ],
+    features: [
+      'AI-Enhanced Performance with Intel Core Ultra 9',
+      'OLED Display with 240Hz Refresh Rate',
+      'RTX 40 Series Graphics',
+      'Premium Build Quality',
+      'Advanced Cooling System',
+      'RGB Customization',
+      'Thunderbolt 4 Connectivity',
+      'Fast Charging Technology'
+    ],
+    description: 'The ROG Zephyrus G16 delivers exceptional gaming performance in an ultra-portable design.',
+    inStock: true,
+    maxQuantity: 5
   }
 ];
 
@@ -239,7 +281,7 @@ const Product: React.FC<ProductProps> = ({
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-6xl mx-auto px-8 py-8">
       {/* Botón de regreso */}
       <button
         onClick={onNavigateBack}
@@ -329,8 +371,8 @@ const Product: React.FC<ProductProps> = ({
           </div>
 
           {/* Pestañas de información */}
-          <div>
-            <div className="flex ">
+          <div >
+            <div className="flex justify-end items-center ">
               <button
                 onClick={() => setActiveTab('specifications')}
                 className={`px-4 py-2 font-koulen text-[24px] ${
@@ -383,7 +425,7 @@ const Product: React.FC<ProductProps> = ({
             <img
               src={product.images[selectedImage]}
               alt={product.name}
-              className="w-[625px] h-[625px] object-contain"
+              className="w-[550px] h-[470px]  object-contain"
             />
           </div>
           
@@ -392,9 +434,9 @@ const Product: React.FC<ProductProps> = ({
               <button
                 key={index}
                 onClick={() => setSelectedImage(index)}
-                className={`flex-shrink-0 w-[120px] h-[120px]  transition-transform duration-300 ease-in-out ${
+                className={`flex-shrink-0 w-[100px] h-[100px]  transition-transform duration-300 ease-in-out ${
                   selectedImage === index
-                    ? 'opacity-100 scale-110'
+                    ? 'opacity-100 scale-125'
                     : 'opacity-50 scale-70'
                 }`}
               >
@@ -411,7 +453,7 @@ const Product: React.FC<ProductProps> = ({
 
       {/* Productos recomendados usando ProductCard */}
       <div className="mt-16">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">RECOMMENDED FOR YOU</h2>
+        <h2 className="text-[30px] font-koulen text-black mb-8">RECOMMENDED FOR YOU</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {recommendedProducts.map((recProduct) => (
             <ProductCard
