@@ -4,7 +4,7 @@ const ShopNowButton = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/products');
+    navigate('/search');
   };
 
   return (

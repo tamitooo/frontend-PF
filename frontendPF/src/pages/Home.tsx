@@ -4,6 +4,8 @@ import ShopNowButton from '../components/ShopNow.tsx';
 import { FaGamepad, FaMobileAlt, FaLaptop, FaHeadphones, FaPlug, FaTv } from 'react-icons/fa';
 import CategoryButtons from '../components/CategoryButtons';
 import imagen1 from '../assets/images/imagen1.jpg';
+import ProductCard from '../components/ProductCard.tsx';
+import Lenovo from '../assets/lenovo.png';
 
 const categories = [
   { icon: <FaGamepad size={28} />, label: 'Gaming', to: '/category/gaming' },
@@ -13,6 +15,20 @@ const categories = [
   { icon: <FaPlug size={28} />, label: 'Accessories', to: '/category/accessories' },
   { icon: <FaTv size={28} />, label: 'Monitors', to: '/category/monitors' },
 ];
+
+const sampleProducts = [
+  {
+    id: '1',
+    name: 'Lenovo LOQ 9na Gen (15" Intel) con RTX™ 3050',
+    price: 3700,
+    originalPrice: 4000,
+    discount: 26,
+    image: Lenovo,
+    category: 'laptops',
+  },
+];
+
+
 
 const Home: React.FC = () => {
   return (
@@ -38,6 +54,41 @@ const Home: React.FC = () => {
             />
           ))}
         </section>
+        <section className="text-center text-white mt-16">
+          <h2 className="font-koulen text-xl mb-6">TRENDING PRODUCTS</h2>
+          <div className="flex flex-wrap justify-center gap-6">
+            {sampleProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
+            ))}
+            {sampleProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
+            ))}
+            {sampleProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
+            ))}
+            {sampleProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
+            ))}
+          </div>
+        </section>
+        <section className="text-center text-white mt-16">
+          <h2 className="font-koulen text-xl mb-6">NEW PRODUCTS</h2>
+          <div className="flex flex-wrap justify-center gap-6">
+            {sampleProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
+            ))}
+            {sampleProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
+            ))}
+            {sampleProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
+            ))}
+            {sampleProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
+            ))}
+          </div>
+        </section>
+        <section className="text-center text-white mt-16 mb-10"></section>
     </div>
   );
 };
