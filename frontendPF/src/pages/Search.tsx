@@ -203,8 +203,8 @@ const Search: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Header con buscador */}
-      <div className="bg-white ">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+      <div className="bg-white mt-4 ">
+        <div className="max-w-7xl mx-auto px-4 py-2">
           <form onSubmit={handleSearch} className="max-w-2xl mx-auto">
             <div className="relative">
               <input
@@ -234,14 +234,15 @@ const Search: React.FC = () => {
         />
 
         {/* Contenido principal */}
+        
         <div className="flex-1 p-6">
           {/* Resultados info */}
-          <div className="mb-6">
-            <p className="text-gray-600">
+          <div className="mt-6 mb-2">
+            <p className="text-gray-600 text-[16px] font-jaldi">
               Showing {((currentPage - 1) * productsPerPage) + 1}-{Math.min(currentPage * productsPerPage, filteredProducts.length)} of {filteredProducts.length} results
             </p>
           </div>
-
+          <div className="w-95 h-px bg-amarillo1 mb-2"></div>
           {/* Grid de productos */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {paginatedProducts.map((product) => (
@@ -255,7 +256,7 @@ const Search: React.FC = () => {
               <p className="text-gray-500 text-lg">No products found matching your criteria.</p>
             </div>
           )}
-
+          
           {/* Paginación */}
           {totalPages > 1 && (
             <Pagination
