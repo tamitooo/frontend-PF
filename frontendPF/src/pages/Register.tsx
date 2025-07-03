@@ -18,7 +18,7 @@ const Register: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-[800px] bg-black">
       <div className="flex justify-center items-center w-full">
         <div className="w-[1100px] flex items-center justify-center">
             <form
