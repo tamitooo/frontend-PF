@@ -18,6 +18,7 @@ import Orders   from './pages/Myorders';
 import Product  from './pages/Product';
 import Search   from './pages/Search';
 import CreateProduct from './pages/CreateProduct';
+import ViewOrder from './pages/ViewOrder';
 
 const AppLayout: React.FC = () => {
   const { pathname } = useLocation();
@@ -36,11 +37,12 @@ const AppLayout: React.FC = () => {
           <Route path="/"        element={<Home />} />
           <Route path="/cart"    element={<Cart />} />
           <Route path="/orders"  element={<Orders />} />
-          <Route path="/product" element={<Product />} />
+          <Route path="/product/:id" element={<Product />} />
           <Route path="/search"  element={<Search />} />
           <Route path="/login"   element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/crear-producto" element={<CreateProduct />} />
+          <Route path="/ver-orden" element={<ViewOrder />} />
           
         </Routes>
       </div>
